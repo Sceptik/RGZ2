@@ -1,0 +1,32 @@
+.task_input__block{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_col_block{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 25px;
+}
+
+.submit__btn{
+    width: 180px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    border:1px solid #000;
+    height: 30px;
+    background: rgb(0,36,0);
+    transition: all 0.5s;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+}
+
+.submit__btn:hover{
+    transform: translateY(5px);
+    transition: all 0.5s;
+    box-shadow: -1px -2px 8px 0px rgba(0, 0, 0, 1);
+}

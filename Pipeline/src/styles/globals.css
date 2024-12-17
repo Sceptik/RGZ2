@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.backround__item{
+  display: flex;
+  flex-direction: column;
+  background: url("../../public/b2.jpg");
+  width: 100%;
+  height: 950px;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 310px;
+  min-height: 45px;
+  display: inline-flex;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(295px + 12px);
+  min-height: calc(30px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, 
+.button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, 
+.button:focus::before {
+  opacity: 1;
+}
+
+.button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button:hover::after, 
+.button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.bbb{
+  width: 100px; /* Ширина рамки */
+  height: 60px; /* Высота рамки */
+  border: 1px solid #000; /* Толщина и цвет рамки (черная) */
+  background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+
+  display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.bbb1{
+  width: 120px; /* Ширина рамки */
+  height: 40px; /* Высота рамки */
+  border: 1px solid #000; /* Толщина и цвет рамки (черная) */
+  background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+
+  margin-left: 800px;
+
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.bbb2{
+  width: 120px; /* Ширина рамки */
+  height: 30px; /* Высота рамки */
+  border: 1px solid #000; /* Толщина и цвет рамки (черная) */
+  background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+
+  margin-left: 550px;
+
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    text-align: center; /* Выравнивание текста по центру */
+}

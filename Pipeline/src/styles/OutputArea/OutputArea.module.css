@@ -1,0 +1,16 @@
+
+.output__area{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    height: 150px;
+}
+
+.output_text__area{
+    resize: none;
+    height: 250px;
+    background-color: #f5f5f5;
+}
